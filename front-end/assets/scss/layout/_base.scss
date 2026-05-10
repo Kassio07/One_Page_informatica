@@ -1,0 +1,119 @@
+// REGRAS GERAIS DO PROJETO
+*{
+ box-sizing: border-box;
+}
+
+html{
+ scroll-behavior: smooth;
+}
+
+body{
+ margin: 0;
+ padding: 0;
+ background-color: var(--background-color);
+ font-family: var(--default-font);
+ color: var(--default-color);
+ box-sizing: border-box;
+ position: relative;
+}
+
+h1, h2, h3, h4, h5, h6{
+ font-family: var(--default-font);
+ background:var(--background-color);
+ color:var(--heading-color);
+}
+h1, .h1{
+ font-size: clamp(32px, 5vw, 56px); 
+}
+h2, .h2{
+ font-size: clamp(28px, 3vw, 36px);  
+}
+h3, .h3{
+ font-size: clamp(24px, 2vw, 30px);
+}
+
+h4, h4{
+ font-size: clamp(18px, 1vw, 24px);
+}
+ 
+p{
+ font-size: 16px;
+ line-height: 1.6;
+}
+
+ul{
+ list-style: none;
+ padding: 0;
+}
+
+a{
+ text-decoration: none;
+ color: var(--default-color);
+}
+
+
+.small{
+ font-size: 14px;
+}
+.weak{
+ font-weight: 600;
+}
+
+
+
+// containers
+.container{
+ width: 100%;
+ max-width: 1400px;
+
+ margin: 0 auto;
+ padding: 0 30px;
+}
+
+
+
+
+//==================== RESPONSIVIDADE =============================
+
+// DESKTOP 
+@media (max-width: 1400px) {
+ 
+}
+
+// LAPTOP
+@media (max-width: 992px) {
+.container{
+ max-width: 960px;
+ padding: 0 20px;
+}
+}
+
+
+// TABLET
+@media (max-width: 768px) {
+ .container{
+  max-width: 720px;
+  padding: 0 15px;
+ }
+ p{
+  font-size: 15px;
+ }
+}
+
+
+// MOBILE
+@media (max-width: 576px) {
+ .container-xl{
+  max-width: 100%;
+  padding: 0 10px;
+ }
+ p{
+  font-size: 14px;
+ }
+}
+
+
+
+
+
+

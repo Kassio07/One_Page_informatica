@@ -1,0 +1,21 @@
+// CONFIGURAÇÕES GLOBAIS PARA O PROJETO
+:root {
+ // FONTS
+ --default-font: "Poppins", sans-serif;
+ --heading-font: "Playfair Display", sans-serif;
+ --nav-font: "Poppins", sans-serif;
+
+ // COLORS
+ --background-color: #010911;
+ --default-color: #ffffff;
+ --heading-color: #ffffff;
+ --accent-color: #ffc107;
+ --contraste-color: #ffffff;
+ --surface-color: #007bff;
+ --action-color:#25D366; 
+
+ // NAV COLORS
+ --nav-color: #ffffff;
+ --nav-hover-color: #007bff;
+ --nav-mobile-background-color:#fff;
+}
