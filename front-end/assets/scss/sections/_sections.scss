@@ -1,0 +1,50 @@
+// hiro
+.hiro{
+ background-image: url("../../assets/img/informatica-manutencao-notebook.png");
+ background-position: bottom;
+ background-size: cover;
+ background-repeat: no-repeat;
+ min-height: 100dvh;
+ width: 100%;
+ position: relative;
+
+ .hiro-content{
+  position: absolute;
+  max-width: 600px;
+  height: 100%;
+ 
+  display: flex;
+  align-items: center;
+
+  .hiro-col-content{
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   width: 100%;
+
+   .destaque-hiro{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+
+    .item{
+     border:1px solid var(--accent-color);
+     padding: 5px 15px;
+     border-radius: 15px;
+     font-size: 12px;
+    }
+   }
+
+   .text-hiro{
+    display: flex;
+    flex-direction: column;
+    ul{
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+    }
+   }
+  }
+ }
+}

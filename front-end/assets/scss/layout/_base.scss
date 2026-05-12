@@ -8,6 +8,10 @@ html{
 }
 
 body{
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+
  margin: 0;
  padding: 0;
  background-color: var(--background-color);
@@ -15,6 +19,10 @@ body{
  color: var(--default-color);
  box-sizing: border-box;
  position: relative;
+}
+
+main{
+ flex: 1;
 }
 
 h1, h2, h3, h4, h5, h6{

@@ -16,3 +16,14 @@ close.addEventListener("click", () => {
   close.classList.remove("active");
   open.classList.remove("active");
 });
+
+
+window.addEventListener("scroll", ()=>{
+ const navScroll = document.querySelector(".menu-nav");
+
+ if(window.scrollY > 50){
+  navScroll.style.top = "5px";
+ }else{
+  navScroll.style.top = "30px";
+ }
+})
