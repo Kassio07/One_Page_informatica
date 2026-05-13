@@ -23,6 +23,8 @@ window.addEventListener("scroll", ()=>{
 
  if(window.scrollY > 50){
   navScroll.style.top = "5px";
+  navScroll.style.opacity = .9;
+
  }else{
   navScroll.style.top = "30px";
  }

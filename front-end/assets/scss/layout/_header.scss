@@ -167,17 +167,4 @@ header {
   .close-menu {
    display: none;
    position: fixed;
-   left: 50%;
-   top: 17%;
-   cursor: pointer;
-
-   img {
-    width: 40px;
-   }
-
-   &.active {
-    display: flex;
-   }
-  }
- }
-}
+   left: 50%;/;

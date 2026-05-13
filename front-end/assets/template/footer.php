@@ -13,6 +13,7 @@
      <div>
       <p><span class="weak">Telefone:</span> +55 (11) 949214071</p>
       <p><span class="weak">Email:</span> k7informatica@gmail.com</p>
+      <p class="small"><span class="weak" style="color: var(--surface-color); font-weight: normal">Quer desenvolver seu Site? <br> Entre em contato em:</span> k7informatica@gmail.com</p>
      </div>
     </div>
     <div class="foo-redes">
