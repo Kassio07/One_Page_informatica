@@ -1,5 +1,6 @@
 // section geral
 section {
+ padding: 50px 0;
  .content {
   width: 100%;
   .title {
@@ -7,7 +8,7 @@ section {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   padding: 65px 0;
+   padding: 0px 0px 80px 0;
    h1 {
     max-width: 900px;
     margin-bottom: 0;
@@ -132,13 +133,358 @@ section {
  }
 }
 
-// section informação
-.section {
+// Section informação
+.section-info {
+ .content {
+  .info-container {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 50px;
+   margin: 30px 0;
+
+   .info-content {
+    // border: 1px solid var(--default-color);
+    background-color: var(--card-color);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    div {
+     height: auto;
+     width: 100%;
+
+     display: flex;
+     flex-direction: row;
+
+     .info-play {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     }
+    }
+
+    div {
+     flex: 1;
+     padding: 30px;
+    }
+    .info-text {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+
+     a {
+      background-color: var(--surface-color);
+      padding: 7px 7px;
+      border-radius: 15px;
+      max-width: 150px;
+      text-align: center;
+      font-size: 11px;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.5s;
+
+      img {
+       width: 25px;
+       height: 25px;
+      }
+
+      &:hover {
+       background-color: var(--surface-color-hover);
+      }
+     }
+
+     .info-destaque {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 15px;
+     }
+    }
+
+    .reverse-col {
+     display: flex;
+     flex-direction: row-reverse;
+    }
+   }
+  }
+ }
+}
+
+// SERVIÇOS
+.servico {
+ background-color: #000000;
+ width: 100%;
+
+ .content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  .container-servico {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   gap: 40px;
+   height: auto;
+
+   div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    gap: 10px;
+    h3 {
+     margin: 0;
+     margin-top: 10px;
+     font-size: 24px;
+    }
+    p {
+     margin: 0;
+    }
+    .service-img {
+     width: 100%;
+     img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+     }
+    }
+   }
+
+   .serv-pc {
+    background-color: var(--card-color);
+   }
+   .serv-notebook {
+    background-color: var(--surface-color);
+   }
+   .serv-suporte {
+    background-color: var(--card-color);
+   }
+  }
+
+  .service-itens-container {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+
+   .service-item {
+    border: 1px solid #ffff;
+    border-radius: 15px;
+    font-size: 11px;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 180px;
+    img {
+     width: 20px;
+     height: 20px;
+    }
+   }
+  }
+
+  .service-text {
+   p {
+    max-width: 1000px;
+    color: #666;
+    line-height: 27px;
+   }
+  }
+ }
+}
+
+// BENEFICIOS
+.beneficios {
+ width: 100%;
+ .content {
+  .beneficios-container {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+
+   div {
+    width: 400px;
+    text-align: center;
+    background-color: var(--surface-color);
+    border-radius: 20px;
+    padding: 20px;
+    p {
+     font-weight: 500;
+    }
+   }
+  }
+ }
+}
+
+// FAIXA - DETALHES
+.faixa-detalhes {
+ background-color: var(--background-details);
+ padding: 0;
+ .content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 50px 0;
+  div {
+   flex: 2;
+   text-align: center;
+  }
+
+  .details-text {
+   .details-btn {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    a {
+     background-color: var(--action-color);
+     padding: 10px 45px;
+     border-radius: 25px;
+     transition: all 0.5s;
+     display: flex;
+     align-items: center;
+     gap: 5px;
+     max-width: 300px;
+
+     &:hover {
+      background-color: rgba(2, 160, 2, 0.448);
+     }
+    }
+   }
+   .details-passo-passo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    div{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center ;
+     flex: 1;
+     position: relative;
+     span{
+      background-color: var(--accent-color);
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #000000;
+
+      position: absolute;
+      top: -5px;
+      left: 100px;
+     }
+     .arrow{
+      position: absolute;
+      right: -50px;
+      top: 0;
+     }
+     img{
+      width: 70px;
+     }
+     p{
+      &:last-child{
+       font-weight: 100;
+      }
+
+     }
+    }
+   }
+  }
+
+  .details-img{
+   flex: 1;
+   h4{
+    text-align: start;
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+   }
+   p{
+    text-align: start;
+    font-weight: 100;
+   }
+  }
+ }
+}
+
+// PROCURA
+.procura {
+ .content {
+  .container-procura {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 15px;
+   padding-top: 80px;
+
+   .procura-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+
+    background: #074b8f;
+    background: linear-gradient(358deg, rgba(7, 75, 143, 1) 0%, rgba(153, 153, 153, 1) 100%);
+
+    img {
+     max-width: 80px;
+    }
+
+    a {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     gap: 10px;
+
+     background-color: var(--action-color);
+     padding: 5px 10px;
+     border-radius: 10px;
+     transition: all 0.5s;
+
+     &:hover {
+      background-color: rgba(2, 160, 2, 0.448);
+     }
+    }
+   }
+  }
+ }
 }
 
 // ===========Média querys =======================
 
 @media (max-width: 768px) {
+ // Geral
  section {
   .content {
    .title {
@@ -189,13 +535,73 @@ section {
    }
   }
  }
+
+ // Informação
+ .info-container {
+  .info-content {
+   div {
+    flex-direction: column-reverse !important;
+    padding: 15px !important;
+
+    .info-text {
+     h2 {
+      font-size: 17px;
+     }
+     span {
+      font-size: 13px;
+     }
+    }
+   }
+  }
+ }
+
+ // Serviços
+ .servico {
+  .content {
+   .container-servico {
+    flex-direction: column;
+    div {
+     max-width: 400px;
+    }
+   }
+
+   .service-itens-container {
+    align-items: center;
+    justify-content: center;
+   }
+  }
+ }
+
+ // FAIXA - DETALHES
+.faixa-detalhes {
+ .content {
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  .details-img{
+   img{
+    width: 300px;
+   }
+  }
+  .details-text{
+   .details-passo-passo{
+    flex-direction: column;
+    div{
+     .arrow{
+      display: none;
+     }
+    }
+   }
+  }
+ }
+}
 }
 
 @media (max-width: 576px) {
  // hero
  .hero {
   background-image: url("../../assets/img/manutencao-noteook-mobil.png");
-  background-position: center; 
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -207,15 +613,15 @@ section {
     .destaque-hero {
      gap: 10px;
      padding-right: 70px;
-     .item{
+     .item {
       font-size: 9px;
       padding: 5px 7px;
      }
     }
     .text-hero {
-     ul{
+     ul {
       margin-top: 0;
-      li{
+      li {
        font-size: 12px;
       }
      }

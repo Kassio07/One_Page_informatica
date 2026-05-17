@@ -9,6 +9,9 @@
   --contraste-color: #ffffff;
   --surface-color: #007bff;
   --action-color:#25D366;
+  --card-color: #0C0B0B;
+  --background-details:#000000;
+  --surface-color-hover: #034fa1;
   --nav-color: #ffffff;
   --nav-hover-color: #007bff;
   --nav-mobile-background-color:#fff;
@@ -33,6 +36,7 @@ body {
   color: var(--default-color);
   box-sizing: border-box;
   position: relative;
+  overflow-x: hidden;
 }
 
 main {
@@ -41,7 +45,6 @@ main {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--default-font);
-  background: var(--background-color);
   color: var(--heading-color);
 }
 
@@ -61,9 +64,14 @@ h4, h4 {
   font-size: clamp(18px, 1vw, 24px);
 }
 
+.h4 {
+  font-size: 22px;
+}
+
 p {
   font-size: 16px;
   line-height: 1.6;
+  font-weight: 300;
 }
 
 ul {
@@ -91,6 +99,14 @@ a {
   padding: 0 30px;
 }
 
+.divisor-pag {
+  height: 117px;
+  overflow: hidden;
+}
+.divisor-pag img {
+  width: 100%;
+}
+
 @media (max-width: 992px) {
   .container {
     max-width: 960px;
@@ -115,6 +131,14 @@ a {
     font-size: 14px;
   }
 }
+.accent-color {
+  color: var(--accent-color);
+}
+
+.surface-color {
+  color: var(--surface-color);
+}
+
 header {
   position: relative;
 }
@@ -256,14 +280,6 @@ header .content_nav nav .menu_nav_btn_contato a {
     display: none;
     position: fixed;
     left: 50%;
-    top: 17%;
-    cursor: pointer;
-  }
-  .content_nav .close-menu img {
-    width: 40px;
-  }
-  .content_nav .close-menu.active {
-    display: flex;
   }
 }
 footer {
@@ -363,6 +379,9 @@ footer .fooCopy {
   margin-bottom: 0;
 }
 
+section {
+  padding: 50px 0;
+}
 section .content {
   width: 100%;
 }
@@ -371,7 +390,7 @@ section .content .title {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 65px 0;
+  padding: 0px 0px 80px 0;
 }
 section .content .title h1 {
   max-width: 900px;
@@ -383,7 +402,7 @@ section .content .title p {
   font-size: 20px;
 }
 
-.hiro {
+.hero {
   background-image: url("../../assets/img/informatica-manutencao-notebook.png");
   background-position: bottom;
   background-size: cover;
@@ -392,41 +411,41 @@ section .content .title p {
   width: 100%;
   position: relative;
 }
-.hiro .hiro-content {
+.hero .hero-content {
   position: absolute;
   max-width: 600px;
   height: 100%;
   display: flex;
   align-items: center;
 }
-.hiro .hiro-content .hiro-col-content {
+.hero .hero-content .hero-col-content {
   display: flex;
   flex-direction: column;
   gap: 30px;
   width: 100%;
 }
-.hiro .hiro-content .hiro-col-content .destaque-hiro {
+.hero .hero-content .hero-col-content .destaque-hero {
   display: flex;
   flex-direction: row;
   gap: 20px;
   width: 100%;
 }
-.hiro .hiro-content .hiro-col-content .destaque-hiro .item {
+.hero .hero-content .hero-col-content .destaque-hero .item {
   border: 1px solid var(--accent-color);
   padding: 5px 15px;
   border-radius: 15px;
   font-size: 12px;
 }
-.hiro .hiro-content .hiro-col-content .text-hiro {
+.hero .hero-content .hero-col-content .text-hero {
   display: flex;
   flex-direction: column;
 }
-.hiro .hiro-content .hiro-col-content .text-hiro ul {
+.hero .hero-content .hero-col-content .text-hero ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.hiro .hiro-content .hiro-col-content .action-hiro a {
+.hero .hero-content .hero-col-content .action-hero a {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -438,7 +457,7 @@ section .content .title p {
   border-radius: 25px;
   transition: all 0.7s;
 }
-.hiro .hiro-content .hiro-col-content .action-hiro a:hover {
+.hero .hero-content .hero-col-content .action-hero a:hover {
   background-color: rgba(37, 211, 101, 0.7882352941);
 }
 
@@ -476,6 +495,304 @@ section .content .title p {
     transform: translateX(-50%);
   }
 }
+.section-info .content .info-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 30px 0;
+}
+.section-info .content .info-container .info-content {
+  background-color: var(--card-color);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.section-info .content .info-container .info-content div {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.section-info .content .info-container .info-content div .info-play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-info .content .info-container .info-content div {
+  flex: 1;
+  padding: 30px;
+}
+.section-info .content .info-container .info-content .info-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.section-info .content .info-container .info-content .info-text a {
+  background-color: var(--surface-color);
+  padding: 7px 7px;
+  border-radius: 15px;
+  max-width: 150px;
+  text-align: center;
+  font-size: 11px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.5s;
+}
+.section-info .content .info-container .info-content .info-text a img {
+  width: 25px;
+  height: 25px;
+}
+.section-info .content .info-container .info-content .info-text a:hover {
+  background-color: var(--surface-color-hover);
+}
+.section-info .content .info-container .info-content .info-text .info-destaque {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+.section-info .content .info-container .info-content .reverse-col {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.servico {
+  background-color: #000000;
+  width: 100%;
+}
+.servico .content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.servico .content .container-servico {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  height: auto;
+}
+.servico .content .container-servico div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  gap: 10px;
+}
+.servico .content .container-servico div h3 {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 24px;
+}
+.servico .content .container-servico div p {
+  margin: 0;
+}
+.servico .content .container-servico div .service-img {
+  width: 100%;
+}
+.servico .content .container-servico div .service-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.servico .content .container-servico .serv-pc {
+  background-color: var(--card-color);
+}
+.servico .content .container-servico .serv-notebook {
+  background-color: var(--surface-color);
+}
+.servico .content .container-servico .serv-suporte {
+  background-color: var(--card-color);
+}
+.servico .content .service-itens-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.servico .content .service-itens-container .service-item {
+  border: 1px solid white;
+  border-radius: 15px;
+  font-size: 11px;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 180px;
+}
+.servico .content .service-itens-container .service-item img {
+  width: 20px;
+  height: 20px;
+}
+.servico .content .service-text p {
+  max-width: 1000px;
+  color: #666;
+  line-height: 27px;
+}
+
+.beneficios {
+  width: 100%;
+}
+.beneficios .content .beneficios-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.beneficios .content .beneficios-container div {
+  width: 400px;
+  text-align: center;
+  background-color: var(--surface-color);
+  border-radius: 20px;
+  padding: 20px;
+}
+.beneficios .content .beneficios-container div p {
+  font-weight: 500;
+}
+
+.faixa-detalhes {
+  background-color: var(--background-details);
+  padding: 0;
+}
+.faixa-detalhes .content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 50px 0;
+}
+.faixa-detalhes .content div {
+  flex: 2;
+  text-align: center;
+}
+.faixa-detalhes .content .details-text .details-btn {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.faixa-detalhes .content .details-text .details-btn a {
+  background-color: var(--action-color);
+  padding: 10px 45px;
+  border-radius: 25px;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  max-width: 300px;
+}
+.faixa-detalhes .content .details-text .details-btn a:hover {
+  background-color: rgba(2, 160, 2, 0.448);
+}
+.faixa-detalhes .content .details-text .details-passo-passo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.faixa-detalhes .content .details-text .details-passo-passo div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  position: relative;
+}
+.faixa-detalhes .content .details-text .details-passo-passo div span {
+  background-color: var(--accent-color);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  position: absolute;
+  top: -5px;
+  left: 100px;
+}
+.faixa-detalhes .content .details-text .details-passo-passo div .arrow {
+  position: absolute;
+  right: -50px;
+  top: 0;
+}
+.faixa-detalhes .content .details-text .details-passo-passo div img {
+  width: 70px;
+}
+.faixa-detalhes .content .details-text .details-passo-passo div p:last-child {
+  font-weight: 100;
+}
+.faixa-detalhes .content .details-img {
+  flex: 1;
+}
+.faixa-detalhes .content .details-img h4 {
+  text-align: start;
+  font-size: 32px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.faixa-detalhes .content .details-img p {
+  text-align: start;
+  font-weight: 100;
+}
+
+.procura .content .container-procura {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding-top: 80px;
+}
+.procura .content .container-procura .procura-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #074b8f;
+  background: linear-gradient(358deg, rgb(7, 75, 143) 0%, rgb(153, 153, 153) 100%);
+}
+.procura .content .container-procura .procura-item img {
+  max-width: 80px;
+}
+.procura .content .container-procura .procura-item a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--action-color);
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.procura .content .container-procura .procura-item a:hover {
+  background-color: rgba(2, 160, 2, 0.448);
+}
+
 @media (max-width: 768px) {
   section .content .title {
     padding: 35px 0;
@@ -498,48 +815,82 @@ section .content .title p {
   .slide-faixa .slide-container .slide-content .slide-item img {
     width: 30px;
   }
-  .hiro {
+  .hero {
     background-image: url("../../assets/img/informatica-manutencao-notebook.png");
     background-position: -600px center;
   }
-  .hiro .hiro-content {
+  .hero .hero-content {
     align-items: flex-start;
     padding-top: 15px;
   }
-  .hiro .hiro-content .hiro-col-content .text-hiro p {
+  .hero .hero-content .hero-col-content .text-hero p {
     max-width: 400px;
+  }
+  .info-container .info-content div {
+    flex-direction: column-reverse !important;
+    padding: 15px !important;
+  }
+  .info-container .info-content div .info-text h2 {
+    font-size: 17px;
+  }
+  .info-container .info-content div .info-text span {
+    font-size: 13px;
+  }
+  .servico .content .container-servico {
+    flex-direction: column;
+  }
+  .servico .content .container-servico div {
+    max-width: 400px;
+  }
+  .servico .content .service-itens-container {
+    align-items: center;
+    justify-content: center;
+  }
+  .faixa-detalhes .content {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+  }
+  .faixa-detalhes .content .details-img img {
+    width: 300px;
+  }
+  .faixa-detalhes .content .details-text .details-passo-passo {
+    flex-direction: column;
+  }
+  .faixa-detalhes .content .details-text .details-passo-passo div .arrow {
+    display: none;
   }
 }
 @media (max-width: 576px) {
-  .hiro {
+  .hero {
     background-image: url("../../assets/img/manutencao-noteook-mobil.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .hiro .hiro-content {
+  .hero .hero-content {
     align-items: flex-start;
     padding-top: 15px;
   }
-  .hiro .hiro-content .hiro-col-content .destaque-hiro {
+  .hero .hero-content .hero-col-content .destaque-hero {
     gap: 10px;
     padding-right: 70px;
   }
-  .hiro .hiro-content .hiro-col-content .destaque-hiro .item {
+  .hero .hero-content .hero-col-content .destaque-hero .item {
     font-size: 9px;
     padding: 5px 7px;
   }
-  .hiro .hiro-content .hiro-col-content .text-hiro ul {
+  .hero .hero-content .hero-col-content .text-hero ul {
     margin-top: 0;
   }
-  .hiro .hiro-content .hiro-col-content .text-hiro ul li {
+  .hero .hero-content .hero-col-content .text-hero ul li {
     font-size: 12px;
   }
-  .hiro .hiro-content .hiro-col-content .text-hiro p {
+  .hero .hero-content .hero-col-content .text-hero p {
     display: none;
     max-width: 400px;
   }
-  .hiro .hiro-content .hiro-col-content .action-hiro {
+  .hero .hero-content .hero-col-content .action-hero {
     display: none;
   }
 }/*# sourceMappingURL=main.css.map */

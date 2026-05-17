@@ -19,6 +19,7 @@ body{
  color: var(--default-color);
  box-sizing: border-box;
  position: relative;
+ overflow-x: hidden;
 }
 
 main{
@@ -27,7 +28,6 @@ main{
 
 h1, h2, h3, h4, h5, h6{
  font-family: var(--default-font);
- background:var(--background-color);
  color:var(--heading-color);
 }
 h1, .h1{
@@ -43,10 +43,14 @@ h3, .h3{
 h4, h4{
  font-size: clamp(18px, 1vw, 24px);
 }
+.h4{
+ font-size: 22px;
+}
  
 p{
  font-size: 16px;
  line-height: 1.6;
+ font-weight: 300;
 }
 
 ul{
@@ -76,6 +80,15 @@ a{
 
  margin: 0 auto;
  padding: 0 30px;
+}
+
+// Divisor
+.divisor-pag{
+ height: 117px;
+ overflow: hidden;
+ img{
+  width: 100%;
+ }
 }
 
 
