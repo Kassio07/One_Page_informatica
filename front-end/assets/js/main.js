@@ -29,3 +29,28 @@ window.addEventListener("scroll", ()=>{
   navScroll.style.top = "30px";
  }
 })
+
+
+// Tab - DICAS
+
+const tabs = document.querySelectorAll(".dica-item div");
+const contents = document.querySelectorAll(".conteudo-dicas-container");
+const contentsText = document.querySelectorAll(".conteudo-text");
+
+tabs.forEach((tab)=>{
+  tab.addEventListener("click", ()=>{
+    const target = tab.getAttribute("data-tab");
+
+    tabs.forEach((item) =>{
+      item.classList.remove("active");
+    });
+
+    contents.forEach((content)=>{
+      content.classList.remove("active");
+    });
+
+    tab.classList.add("active");
+    document.getElementById(target).classList.add("active");
+  });
+});
+

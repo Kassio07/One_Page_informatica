@@ -353,6 +353,188 @@ require_once("./back-end/config/url.php");
   </div>
   <!--/DIVIDOR DE PÁGINA -->
 
+  <!-- DICAS -->
+  <section class="dicas">
+   <div class="container">
+    <div class="content">
+     <div class="title">
+      <h1>Veja como melhorar o desempenho do seu <span class="surface-color">PC</span> ou <span class="surface-color">Notebook</span></h1>
+     </div>
+     <div class="dicas-container">
+      <div class="dicas-title-container">
+
+       <div class="dica-item">
+        <div class="active" data-tab="ssd"><img src="<?= $BASE_URL ?>front-end/assets/img/icons/SSD.svg" alt="">Por que colocar um SSD</div>
+       </div>
+
+       <div class="dica-item">
+        <div data-tab="memoria"><img src="<?= $BASE_URL ?>front-end/assets/img/icons/instalacao-memoria.svg" alt="">Upgrade de memória</div>
+       </div>
+
+       <div class="dica-item">
+        <div data-tab="video"><img src="<?= $BASE_URL ?>front-end/assets/img/icons/placa-de-video-instalacao.svg" alt="">Placa de vídeo</div>
+       </div>
+
+       <div class="dica-item">
+        <div data-tab="limpeza"><img src="<?= $BASE_URL ?>front-end/assets/img/icons/limpeza-interna-notebook-computador.svg" alt="">Limpeza interna</div>
+       </div>
+
+      </div>
+
+
+
+      <!-- conteúdo -->
+      <div class="conteudo-dicas-container active" id="ssd">
+       <div class="conteudo-text">
+        <h4>Seu <span class="surface-color">computador está lento?</span> Talvez a solução seja mais simples do que você imagina.</h4>
+        <p>Se o seu notebook ou PC demora para ligar, trava ao abrir programas ou simplesmente não acompanha o seu ritmo, a troca para um SSD (Solid State Drive) pode transformar completamente o desempenho da sua máquina.</p>
+        <h4 class="accent-color">Por que colocar um SSD?</h4>
+        <ul>
+         <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt="">Inicialização muito mais rápida (em segundos)</li>
+         <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt="">Programas abrem quase instantaneamente</li>
+         <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt="">Mais desempenho no dia a dia</li>
+         <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt="">Menor consumo de energia</li>
+         <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt="">Mais durabilidade (sem partes mecânicas)</li>
+        </ul>
+        <p>Em muitos casos, você não precisa investir em um computador novo. Um simples upgrade com SSD já entrega uma performance incrível, economizando dinheiro e aumentando a vida útil do seu equipamento.</p>
+        <p>👉 Quer deixar seu computador rápido de verdade? Fale comigo e faça um upgrade sem dor de cabeça.</p>
+       </div>
+       <div class="conteudo-img">
+        <img src="<?= $BASE_URL ?>front-end/assets/img/ssd-troca-instalacao.png" alt="">
+       </div>
+      </div>
+
+      <!-- memoria -->
+      <div class="conteudo-dicas-container " id="memoria">
+       <div class="conteudo-text">
+        <h4>Seu computador trava ao abrir vários programas? Talvez a solução seja mais simples do que você imagina.</h4>
+
+        <p>Se o seu <span class="surface-color">notebook ou PC </span>fica lento ao usar vários aplicativos ao mesmo tempo, trava com muitas abas abertas ou apresenta lentidão no dia a dia, um upgrade de memória RAM pode melhorar drasticamente o desempenho da sua máquina.</p>
+
+        <h4 class="accent-color">Por que fazer upgrade de memória RAM?</h4>
+        <ul>
+         <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt="">Mais velocidade e fluidez no sistema</li>
+         <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt="">Melhor desempenho em multitarefas</li>
+         <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt="">Menos travamentos e lentidão</li>
+         <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt="">Navegação mais rápida e estável</li>
+         <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt="">Melhor desempenho em jogos e programas pesados</li>
+        </ul>
+        <p>Em muitos casos, você não precisa investir em um computador novo. Apenas aumentando a memória RAM, seu equipamento já ganha muito mais desempenho, estabilidade e velocidade para acompanhar sua rotina.</p>
+        <p>👉 Quer deixar seu computador mais rápido e sem travamentos? Fale comigo e faça um upgrade sem dor de cabeça.</p>
+       </div>
+       <div class="conteudo-img">
+        <img src="<?= $BASE_URL ?>front-end/assets/img/troca-de-memoria-ram.png" alt="">
+       </div>
+      </div>
+
+      <!-- Video -->
+      <div class="conteudo-dicas-container " id="video">
+       <div class="conteudo-text">
+        <h4>Seu computador <span class="surface-color">não aguenta jogos</span>, edições ou programas pesados? Talvez a solução seja um upgrade de placa de vídeo.</h4>
+
+        <p>Se o seu notebook ou PC apresenta travamentos em jogos, baixa qualidade gráfica, lentidão em renderizações ou dificuldade para rodar programas mais pesados, a troca da placa de vídeo pode transformar completamente o desempenho da sua máquina.</p>
+
+        <h4 class="accent-color">Por que fazer upgrade de placa de vídeo?</h4>
+        <ul>
+         <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt="">Mais desempenho em jogos</li>
+         <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt="">Melhor qualidade gráfica</li>
+         <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt="">Mais FPS e fluidez</li>
+         <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt="">Melhor performance em edição de vídeo e design</li>
+         <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt="">Renderizações mais rápidas</li>
+        </ul>
+        <p>Em muitos casos, você não precisa trocar o computador inteiro. Um upgrade de placa de vídeo já pode entregar muito mais desempenho, qualidade visual e velocidade para acompanhar sua rotina ou seus jogos favoritos.</p>
+
+        <p>👉 Quer mais potência e desempenho no seu computador? Fale comigo e faça um upgrade sem dor de cabeça.</p>
+       </div>
+       <div class="conteudo-img">
+        <img src="<?= $BASE_URL ?>front-end/assets/img/placa-de-video-instalacao.png" alt="">
+       </div>
+      </div>
+
+      <!-- Limpeza -->
+      <div class="conteudo-dicas-container " id="limpeza">
+       <div class="conteudo-text">
+        <h4>Seu notebook está <span class="surface-color">esquentando demais</span> ou fazendo muito barulho? Talvez ele esteja precisando de uma limpeza interna.</h4>
+
+        <p>Com o tempo, poeira e sujeira se acumulam dentro do computador, prejudicando a ventilação e causando superaquecimento, travamentos e perda de desempenho no dia a dia.</p>
+
+        <h4 class="accent-color">Por que fazer uma limpeza interna?</h4>
+        <ul>
+         <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt="">Reduz o superaquecimento</li>
+         <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt="">Melhora o desempenho da máquina</li>
+         <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt="">Diminui travamentos e lentidão</li>
+         <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt="">Ajuda na refrigeração do sistema</li>
+         <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt="">Reduz o barulho das ventoinhas</li>
+        </ul>
+        <p>Em muitos casos, uma simples limpeza interna já faz o computador voltar a trabalhar com mais estabilidade, desempenho e segurança, evitando problemas futuros e até danos em componentes.</p>
+
+        <p>👉 Quer deixar seu computador mais frio, silencioso e eficiente? Fale comigo e faça uma limpeza interna profissional sem dor de cabeça.</p>
+       </div>
+       <div class="conteudo-img">
+        <img src="<?= $BASE_URL ?>front-end/assets/img/limpeza-notebook-interna.png" alt="">
+       </div>
+      </div>
+
+
+     </div>
+    </div>
+   </div>
+  </section>
+
+
+  <!-- DIVISOR DE PÁGINA -->
+  <div class="divisor-pag">
+   <img src="<?= $BASE_URL ?>front-end/assets/img/divisor/divisor-to.png" alt="Divisor de página">
+  </div>
+  <!--/DIVIDOR DE PÁGINA -->
+  <!-- Faixa 3 - detalhes -->
+  <section class="faixa-detalhes">
+   <div class="container">
+    <div class="content">
+     <div class="details-img">
+      <!-- <img src="<?= $BASE_URL ?>front-end/assets/img/instalacao-ssd-notebook.svg" alt="Imagem de notebook junto com ssd"> -->
+      <h4>Etapas para <br> reparar <br> seu <span class="accent-color">Notebook</span></h4>
+      <p>Veja como e fácil o processo</p>
+     </div>
+     <div class="details-text">
+      <!-- <p>Notebook Lento? Notebook travando? Não acessa sistema?
+      </p>
+      <h3 class="accent-color">Faça um Upgrade com SSD</h3>
+      <p>Colocar um SSD no seu notebook ou computador é uma das melhores melhorias que você pode fazer. Ele deixa o sistema muito mais rápido, reduz o tempo de inicialização e faz programas abrirem quase instantaneamente.</p>
+      <div class="details-btn">
+       <a href=""><img src="<?= $BASE_URL ?>front-end/assets/img/icons/Phone.svg" alt="">Faça um orçamento</a>
+      </div> -->
+
+      <div class="details-passo-passo">
+       <div>
+        <span>1</span>
+        <div class="arrow"><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow.svg" alt=""></div>
+        <img src="<?= $BASE_URL ?>front-end/assets/img/icons/etapa1.svg" alt="">
+        <p>Ligue para (11) 94921-4071</p>
+        <p>Apresenta o defeito e o problema</p>
+       </div>
+       <div> <span>2</span>
+        <div class="arrow"><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow.svg" alt=""></div><img src="<?= $BASE_URL ?>front-end/assets/img/icons/notebook-iMac.svg" alt="">
+        <p>Entregue seu Notebook</p>
+        <p>Traga em mãos ou solicite a retirada</p>
+       </div>
+       <div> <span>3</span><img src="<?= $BASE_URL ?>front-end/assets/img/icons/entrega-notebook.svg" alt="">
+        <p>Aguarde o Conserto</p>
+        <p>Aprove o orçamento e aguarde conserto</p>
+       </div>
+
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- /Faixa 3 - detalhes -->
+  <!-- DIVISOR DE PÁGINA -->
+  <div class="divisor-pag">
+   <img src="<?= $BASE_URL ?>front-end/assets/img/divisor/divisor-up.png" alt="">
+  </div>
+  <!--/DIVIDOR DE PÁGINA -->
+
 
 
  </main>
