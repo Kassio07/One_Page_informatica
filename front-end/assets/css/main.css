@@ -60,8 +60,8 @@ h3, .h3 {
   font-size: clamp(24px, 2vw, 30px);
 }
 
-h4, h4 {
-  font-size: clamp(18px, 1vw, 24px);
+h4, .h4 {
+  font-size: clamp(22px, 1vw, 26px);
 }
 
 .h4 {
@@ -394,10 +394,9 @@ section .content .title {
   padding: 0px 0px 80px 0;
 }
 section .content .title h1 {
-  max-width: 950px;
+  max-width: 1200px;
   margin-bottom: 0;
   text-align: center;
-  font-size: 50px;
 }
 section .content .title p {
   font-size: 20px;
@@ -810,19 +809,20 @@ section .content .title p {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 10px;
   max-width: 400px;
+  min-width: 60px;
   padding: 20px 30px;
   background-color: var(--card-color);
   border: 1px solid white;
-  font-size: 22px;
+  font-size: 16px;
   border-radius: 2px;
   transition: all 0.5s;
   cursor: pointer;
 }
 .dicas .content .dicas-container .dicas-title-container .dica-item div.active {
   background-color: var(--surface-color);
-  border: none;
 }
 .dicas .content .dicas-container .dicas-title-container .dica-item div img {
   width: 50px;
@@ -857,7 +857,6 @@ section .content .title p {
   flex: 1;
 }
 .dicas .content .dicas-container .conteudo-dicas-container .conteudo-text h4 {
-  font-size: 28px;
   margin-top: 0;
 }
 .dicas .content .dicas-container .conteudo-dicas-container .conteudo-text ul {
@@ -880,11 +879,10 @@ section .content .title p {
 
 @media (max-width: 768px) {
   section .content .title {
-    padding: 35px 0;
+    padding: 70px 0;
   }
   section .content .title h1 {
     width: 100%;
-    font-size: 38px;
   }
   section .content .title p {
     font-size: 16px;
@@ -948,6 +946,34 @@ section .content .title p {
   .procura .content .container-procura {
     justify-content: center;
   }
+  .dicas .content .dicas-container .dicas-title-container .dica-item div {
+    gap: 10px;
+    max-width: 400px;
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  .dicas .content .dicas-container .dicas-title-container .dica-item div img {
+    width: 40px;
+    height: 40px;
+  }
+  .dicas .content .dicas-container .dicas-title-container .dica-item div span {
+    display: none;
+  }
+  .dicas .content .dicas-container .conteudo-dicas-container {
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .dicas .content .dicas-container .conteudo-dicas-container.active {
+    flex-direction: column;
+  }
+  .dicas .content .dicas-container .conteudo-dicas-container .conteudo-img {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .dicas .content .dicas-container .conteudo-dicas-container .conteudo-img img {
+    max-width: 500px;
+  }
 }
 @media (max-width: 576px) {
   .hero {
@@ -962,7 +988,7 @@ section .content .title p {
   }
   .hero .hero-content .hero-col-content .destaque-hero {
     gap: 10px;
-    padding-right: 70px;
+    padding-right: 0px;
   }
   .hero .hero-content .hero-col-content .destaque-hero .item {
     font-size: 9px;
@@ -980,5 +1006,22 @@ section .content .title p {
   }
   .hero .hero-content .hero-col-content .action-hero {
     display: none;
+  }
+  .dicas .content .dicas-container .dicas-title-container {
+    margin-bottom: 50px;
+  }
+  .dicas .content .dicas-container .dicas-title-container .dica-item div {
+    gap: 5px;
+    max-width: 400px;
+    padding: 5px 5px;
+    font-size: 10px;
+  }
+  .dicas .content .dicas-container .dicas-title-container .dica-item div img {
+    width: 40px;
+    height: 40px;
+  }
+  .dicas .content .dicas-container .conteudo-dicas-container .conteudo-img img {
+    width: 100%;
+    max-width: 500px;
   }
 }/*# sourceMappingURL=main.css.map */

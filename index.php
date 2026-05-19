@@ -364,19 +364,19 @@ require_once("./back-end/config/url.php");
       <div class="dicas-title-container">
 
        <div class="dica-item">
-        <div class="active" data-tab="ssd"><img src="<?= $BASE_URL ?>front-end/assets/img/icons/SSD.svg" alt="">Por que colocar um SSD</div>
+        <div class="active" data-tab="ssd"><img src="<?= $BASE_URL ?>front-end/assets/img/icons/SSD.svg" alt=""><span>Por que colocar um</span>SSD</div>
        </div>
 
        <div class="dica-item">
-        <div data-tab="memoria"><img src="<?= $BASE_URL ?>front-end/assets/img/icons/instalacao-memoria.svg" alt="">Upgrade de memória</div>
+        <div data-tab="memoria"><img src="<?= $BASE_URL ?>front-end/assets/img/icons/instalacao-memoria.svg" alt=""><span>Upgrade de</span> Memória</div>
        </div>
 
        <div class="dica-item">
-        <div data-tab="video"><img src="<?= $BASE_URL ?>front-end/assets/img/icons/placa-de-video-instalacao.svg" alt="">Placa de vídeo</div>
+        <div data-tab="video"><img src="<?= $BASE_URL ?>front-end/assets/img/icons/placa-de-video-instalacao.svg" alt=""><span>Placa de</span> Vídeo</div>
        </div>
 
        <div class="dica-item">
-        <div data-tab="limpeza"><img src="<?= $BASE_URL ?>front-end/assets/img/icons/limpeza-interna-notebook-computador.svg" alt="">Limpeza interna</div>
+        <div data-tab="limpeza"><img src="<?= $BASE_URL ?>front-end/assets/img/icons/limpeza-interna-notebook-computador.svg" alt="">Limpeza <span>interna</span></div>
        </div>
 
       </div>
@@ -492,38 +492,18 @@ require_once("./back-end/config/url.php");
    <div class="container">
     <div class="content">
      <div class="details-img">
-      <!-- <img src="<?= $BASE_URL ?>front-end/assets/img/instalacao-ssd-notebook.svg" alt="Imagem de notebook junto com ssd"> -->
-      <h4>Etapas para <br> reparar <br> seu <span class="accent-color">Notebook</span></h4>
-      <p>Veja como e fácil o processo</p>
+      <img src="<?= $BASE_URL ?>front-end/assets/img/tela-quebrada.svg" alt="Imagem de notebook junto com ssd">
      </div>
      <div class="details-text">
-      <!-- <p>Notebook Lento? Notebook travando? Não acessa sistema?
+      <p>Notebook com a tela quebrada? Com riscos? Com manchas?
       </p>
-      <h3 class="accent-color">Faça um Upgrade com SSD</h3>
-      <p>Colocar um SSD no seu notebook ou computador é uma das melhores melhorias que você pode fazer. Ele deixa o sistema muito mais rápido, reduz o tempo de inicialização e faz programas abrirem quase instantaneamente.</p>
+      <h3 class="accent-color">Tela nova instalada</h3>
+      <p>Mão de obra inclusa, trabalhamos apenas com telas <span class="accent-color">NOVAS</span>!</p>
+      <p>Tela Notebook LENOVO - Tela Notebook DELL - Tela Notebook SAMSUMG - Tela Notebook HP - Tela Notebok ACER - Tela Notebook POSITIVO - Tela Notebok ASUS - Tela Notebook LG </p>
       <div class="details-btn">
        <a href=""><img src="<?= $BASE_URL ?>front-end/assets/img/icons/Phone.svg" alt="">Faça um orçamento</a>
-      </div> -->
-
-      <div class="details-passo-passo">
-       <div>
-        <span>1</span>
-        <div class="arrow"><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow.svg" alt=""></div>
-        <img src="<?= $BASE_URL ?>front-end/assets/img/icons/etapa1.svg" alt="">
-        <p>Ligue para (11) 94921-4071</p>
-        <p>Apresenta o defeito e o problema</p>
-       </div>
-       <div> <span>2</span>
-        <div class="arrow"><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow.svg" alt=""></div><img src="<?= $BASE_URL ?>front-end/assets/img/icons/notebook-iMac.svg" alt="">
-        <p>Entregue seu Notebook</p>
-        <p>Traga em mãos ou solicite a retirada</p>
-       </div>
-       <div> <span>3</span><img src="<?= $BASE_URL ?>front-end/assets/img/icons/entrega-notebook.svg" alt="">
-        <p>Aguarde o Conserto</p>
-        <p>Aprove o orçamento e aguarde conserto</p>
-       </div>
-
       </div>
+
      </div>
     </div>
    </div>
