@@ -17,11 +17,12 @@
    <nav class="menu-nav">
     <div class="menu_nav_img"><a href="<?= $BASE_URL ?>"><img src="<?= $BASE_URL ?>front-end/assets/img/k7_informatica_logo.svg" alt="Logo do Site"></a></div>
     <ul>
-     <li><a href="#">Manutenção</a></li>
-     <li><a href="#">Notebooks</a></li>
-     <li><a href="#">Serviços</a></li>
+     <li><a href="#atendimento">Atendimento</a></li>
+     <li><a href="#servico">Serviços</a></li>
+     <li><a href="#profissional">Profissional</a></li>
+     <li><a href="#dicas">Dicas</a></li>
     </ul>
-    <div class="menu_nav_btn_contato"><a href="#"><img src="<?= $BASE_URL ?>front-end/assets/img/icons/Phone.svg" alt="">Contato</a></div>
+    <div class="menu_nav_btn_contato"><a href="<?= $BASE_URL ?>fale-conosco.php"><img src="<?= $BASE_URL ?>front-end/assets/img/icons/Phone.svg" alt="">Fale Conosco</a></div>
    </nav>
   </div>
  </div>

@@ -24,10 +24,12 @@
    <div class="foo-links">
     <h4>Links Úteis</h4>
     <ul>
-     <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt=""><a href="<?= $BASE_URL ?>">Home</a></li>
-     <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt=""><a href="<?= $BASE_URL ?>">Serviços</a></li>
-     <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt=""><a href="<?= $BASE_URL ?>">Atendimento</a></li>
-     <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt=""><a href="<?= $BASE_URL ?>">Informações</a></li>
+     <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt="#"><a href="<?= $BASE_URL ?>">Home</a></li>
+     <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt=""><a href="#servico">Serviços</a></li>
+     <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt=""><a href="#atendimento">Atendimento</a></li>
+     <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt=""><a href="#profissional">Profissional</a></li>
+     <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt=""><a href="#dicas">Dicas</a></li>
+     <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt=""><a href="#">Fale Conosco</a></li>
     </ul>
    </div>
    <div class="foo-newsletter">
@@ -40,7 +42,7 @@
    </div>
   </div>
  </div>
- <p class="small fooCopy">&copy; 2026 | Desenvolvido por K7 Sites - Todos os direitos reservados.</p>
+ <p class="small fooCopy">&copy; 2026 | <strong>K7 Informática</strong> - Desenvolvido por <strong>K7 Sites</strong> - Todos os direitos reservados.</p>
 </footer>
 
 </body>
