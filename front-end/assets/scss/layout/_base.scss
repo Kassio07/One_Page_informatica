@@ -1,13 +1,13 @@
 // REGRAS GERAIS DO PROJETO
-*{
+* {
  box-sizing: border-box;
 }
 
-html{
+html {
  scroll-behavior: smooth;
 }
 
-body{
+body {
  min-height: 100vh;
  display: flex;
  flex-direction: column;
@@ -22,59 +22,65 @@ body{
  overflow-x: hidden;
 }
 
-main{
+main {
  flex: 1;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
  font-family: var(--default-font);
- color:var(--heading-color);
+ color: var(--heading-color);
 }
-h1, .h1{
- font-size: clamp(32px, 5vw, 42px); 
+h1,
+.h1 {
+ font-size: clamp(32px, 5vw, 42px);
 }
-h2, .h2{
- font-size: clamp(28px, 3vw, 36px);  
+h2,
+.h2 {
+ font-size: clamp(28px, 3vw, 36px);
 }
-h3, .h3{
+h3,
+.h3 {
  font-size: clamp(24px, 2vw, 30px);
 }
 
-h4, .h4{
+h4,
+.h4 {
  font-size: clamp(22px, 1vw, 26px);
 }
-.h4{
+.h4 {
  font-size: 22px;
 }
- 
-p{
+
+p {
  font-size: 16px;
  line-height: 1.6;
  font-weight: 300;
 }
 
-ul{
+ul {
  list-style: none;
  padding: 0;
 }
 
-a{
+a {
  text-decoration: none;
  color: var(--default-color);
 }
 
-
-.small{
+.small {
  font-size: 14px;
 }
-.weak{
+.weak {
  font-weight: 600;
 }
 
-
-
 // containers
-.container{
+.container {
  width: 100%;
  max-width: 1400px;
 
@@ -82,60 +88,80 @@ a{
  padding: 0 30px;
 }
 
-// Divisor
-.divisor-pag{
- height: 117px;
- overflow: hidden;
- img{
-  width: 100%;
-  height: -webkit-fill-available;
- }
+
+// Mensagem de erro
+.msg-alert{
+ border-radius: 5px;
+ margin-top: 10px;
 }
 
+.success{
+ background-color: var(--action-color);
+ padding: 10px 15px;
+}
+.error{
+ background-color: red;
+ padding: 10px 15px;
 
+}
 
+// Divisor
+.divisor-pag-to,
+.divisor-pag-up {
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 150px;
+ width: 100%;
+}
+.divisor-pag-up {
+ background-image: url("../../assets/img/divisor/divisor-up.png");
+}
+.divisor-pag-to {
+ background-image: url("../../assets/img/divisor/divisor-to.png");
+}
 
 //==================== RESPONSIVIDADE =============================
 
-// DESKTOP 
+// DESKTOP
 @media (max-width: 1400px) {
- 
 }
 
 // LAPTOP
 @media (max-width: 992px) {
-.container{
- max-width: 960px;
- padding: 0 20px;
+ .container {
+  max-width: 960px;
+  padding: 0 20px;
+ }
 }
-}
-
 
 // TABLET
 @media (max-width: 768px) {
- .container{
+ .container {
   max-width: 720px;
   padding: 0 15px;
  }
- p{
+ p {
   font-size: 15px;
  }
 }
 
-
 // MOBILE
 @media (max-width: 576px) {
- .container-xl{
+ .container-xl {
   max-width: 100%;
   padding: 0 10px;
  }
- p{
+ p {
   font-size: 14px;
  }
+
+ // Divisor
+ .divisor-pag-to,
+ .divisor-pag-up {
+  background-position: center;
+  // background-size: contain;
+  background-repeat: no-repeat;
+  height: 55px;
+ } 
 }
-
-
-
-
-
-

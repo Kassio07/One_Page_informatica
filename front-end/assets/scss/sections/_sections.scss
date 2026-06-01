@@ -87,20 +87,6 @@ section {
      }
     }
    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   }
  }
 }
@@ -800,6 +786,151 @@ section {
   }
  }
 }
+
+// FALE CONOSCO
+.fale-conosco {
+ .content {
+  padding-top: 80px;
+
+  .container-fale {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: 20px;
+   width: 100%;
+   // height: auto;
+   padding: 40px;
+   border-radius: 10px;
+
+   div {
+    flex: 1;
+   }
+
+   .fale-info {
+    display: flex;
+    flex-direction: column;
+    height: 445px;
+    gap: 15px;
+    div {
+     border-radius: 10px;
+     text-align: center;
+     height: 100%;
+    }
+
+    .info-endereco {
+     background-color: var(--card-color);
+    }
+
+    .info-endereco,
+    .info-contact {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    }
+
+    .info-contact {
+     flex-direction: row;
+     justify-content: space-between;
+     gap: 15px;
+     div {
+      flex: 1;
+      background-color: var(--card-color);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     }
+    }
+   }
+
+   .fale-form-container {
+    form {
+     display: flex;
+     flex-direction: column;
+     background-color: var(--card-color);
+     padding: 20px;
+     gap: 12px;
+     div {
+      margin-bottom: 10px;
+     }
+     .inputs-container {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      div {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+      }
+     }
+
+     input,
+     select,
+     textarea {
+      background-color: var(--background-color);
+      color: #ffff;
+      padding: 10px 10px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.5s;
+      backdrop-filter: blur(10px);
+
+      &:focus {
+       outline: none;
+       border-color: var(--accent-color);
+       box-shadow: 0 0 10px rgba(255, 193, 7, 0.3);
+      }
+
+      &:hover {
+       border-color: var(--accent-color);
+      }
+     }
+
+     .input-interesse {
+      select {
+       height: 100%;
+       cursor: pointer;
+
+       option {
+        background-color: var(--background-color);
+       }
+      }
+     }
+
+     .input-message {
+      display: flex;
+      flex-direction: column;
+     }
+
+     .input-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      button {
+       padding: 15px 45px;
+       border-radius: 25px;
+       border: 1px solid rgba(255, 255, 255, 0.1);
+       background-color: transparent;
+       color: #ffff;
+       font-size: 16px;
+       transition: all 0.5s;
+       cursor: pointer;
+
+       &:hover {
+        border-color: var(--accent-color);
+        box-shadow: 0 0 10px rgba(255, 193, 7, 0.3);
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}
 // ===========Média querys =======================
 
 @media (max-width: 768px) {
@@ -1034,6 +1165,41 @@ section {
       img {
        width: 100%;
        max-width: 500px;
+      }
+     }
+    }
+   }
+  }
+ }
+
+ // FALE CONOSCO
+ .fale-conosco {
+  padding-top: 0px;
+  .content {
+   .container-fale {
+    flex-direction: column-reverse;
+    padding: 0;
+    gap: 120px;
+    div {
+     width: 100%;
+    }
+    .fale-info {
+     height: auto;
+     .info-endereco {
+      padding: 20px 10px;
+     }
+     .info-contact {
+      flex-direction: column;
+      div {
+       width: 100%;
+       padding: 20px 0;
+      }
+     }
+    }
+    .fale-form-container {
+     form {
+      .inputs-container {
+       flex-direction: column;
       }
      }
     }

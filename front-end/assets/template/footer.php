@@ -1,48 +1,51 @@
-<footer>
- <div class="container">
-  <div class="footer-content">
-   <div class="contact_footer">
-    <div class="foo-logo">
-     <img src="<?= $BASE_URL ?>front-end/assets/img/informatica_logo_footer.png" alt="K7 Informática">
+<!-- ...... -->
+<div class="container">
+ <div class="footer-content">
+  <div class="contact_footer">
+   <div class="foo-logo">
+    <img src="<?= $BASE_URL ?>front-end/assets/img/informatica_logo_footer.png" alt="K7 Informática">
+   </div>
+   <div>
+    <div>
+     <p class="small">Tucuruví - São Paulo, SP</p>
+     <p class="small">Zona Norte - SP</p>
     </div>
     <div>
-     <div>
-      <p class="small">Tucuruví - São Paulo, SP</p>
-      <p class="small">Zona Norte - SP</p>
-     </div>
-     <div>
-      <p><span class="weak">Telefone:</span> +55 (11) 949214071</p>
-      <p><span class="weak">Email:</span> k7informatica@gmail.com</p>
-      <p class="small"><span class="weak" style="color: var(--surface-color); font-weight: normal">Quer desenvolver seu Site? <br> Entre em contato em:</span> k7informatica@gmail.com</p>
-     </div>
-    </div>
-    <div class="foo-redes">
-     <span><img src="" alt=""></span>
-     <span><img src="" alt=""></span>
+     <p><span class="weak">Telefone:</span> +55 (11) 949214071</p>
+     <p><span class="weak">Email:</span> k7informatica@gmail.com</p>
+     <p class="small"><span class="weak" style="color: var(--surface-color); font-weight: normal">Quer desenvolver seu Site? <br> Entre em contato em:</span> k7informatica@gmail.com</p>
     </div>
    </div>
-   <div class="foo-links">
-    <h4>Links Úteis</h4>
-    <ul>
-     <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt="#"><a href="<?= $BASE_URL ?>">Home</a></li>
-     <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt=""><a href="#servico">Serviços</a></li>
-     <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt=""><a href="#atendimento">Atendimento</a></li>
-     <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt=""><a href="#profissional">Profissional</a></li>
-     <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt=""><a href="#dicas">Dicas</a></li>
-     <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt=""><a href="#">Fale Conosco</a></li>
-    </ul>
-   </div>
-   <div class="foo-newsletter">
-    <h4>Newsletter</h4>
-    <p>Não iremos lotar sua caixa de entrada, apenas enviar dicas de como cuidar do seu PC ou Notebook.</p>
-    <form action="index.php" method="post">
-     <input type="email" name="email" id="emailInput" placeholder="Digite seu e-mail">
-     <button type="submit">Enviar</button>
-    </form>
+   <div class="foo-redes">
+    <span><img src="" alt=""></span>
+    <span><img src="" alt=""></span>
    </div>
   </div>
+  <div class="foo-links">
+   <h4>Links Úteis</h4>
+   <ul>
+    <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt="#"><a href="<?= $BASE_URL ?>">Home</a></li>
+    <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt=""><a href="<?= $BASE_URL ?>#servico">Serviços</a></li>
+    <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt=""><a href="<?= $BASE_URL ?>#atendimento">Atendimento</a></li>
+    <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt=""><a href="<?= $BASE_URL ?>#profissional">Profissional</a></li>
+    <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt=""><a href="<?= $BASE_URL ?>#dicas">Dicas</a></li>
+    <li><img src="<?= $BASE_URL ?>front-end/assets/img/icons/arrow_icon.svg" alt=""><a href="#">Fale Conosco</a></li>
+   </ul>
+  </div>
+  <div class="foo-newsletter">
+   <h4>Newsletter</h4>
+   <p>Não iremos lotar sua caixa de entrada, apenas enviar dicas de como cuidar do seu PC ou Notebook.</p>
+   <form id="formNewslatter">
+    <input type="hidden" name="formulario" value="newsletter">
+    <input type="email" name="email" id="emailInput" placeholder="Digite seu e-mail">
+    <button type="submit">Enviar</button>
+   </form>
+   <!-- MSG Alerta -->
+   <div class="msg-alert"></div>
+  </div>
  </div>
- <p class="small fooCopy">&copy; 2026 | <strong>K7 Informática</strong> - Desenvolvido por <strong>K7 Sites</strong> - Todos os direitos reservados.</p>
+</div>
+<p class="small fooCopy">&copy; 2026 | <strong>K7 Informática</strong> - Desenvolvido por <strong>K7 Sites</strong> - Todos os direitos reservados.</p>
 </footer>
 
 </body>
